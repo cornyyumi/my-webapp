@@ -44,7 +44,7 @@
     font-family: 'Gaegu', cursive;
 }
 
-a {
+.cardText a {
     text-decoration: none;
     color: black;
 }
