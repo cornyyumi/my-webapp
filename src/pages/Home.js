@@ -2,6 +2,8 @@ import styles from '../style/Home.module.css';
 import myRoom from '../images/myRoom.png';
 import profile from '../images/profile.png';
 import circle1 from '../images/circle1.png';
+import github from '../images/github.png';
+import linkedin from '../images/linkedin.png';
 
 function Home() {
     return (
@@ -9,7 +11,7 @@ function Home() {
             <div className={styles.left}>
                 <div className={styles.leftTop}>
                     <h1>Hi, I'm Grace Kim</h1>
-                    <img src={profile}></img>
+                    <img src={profile}/>
                 </div>
                 <div className={styles.leftBot}>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -17,6 +19,14 @@ function Home() {
                         Integer tempus diam at justo tempus, at iaculis mi fringilla.
                     </p>
                     <h2>Check out my other links!</h2>
+                    <div className={styles.linksList}>
+                        <div className={styles.link}>
+                            <img src={github}/>
+                        </div>
+                        <div className={styles.link}>
+                            <img src={linkedin}/>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className={styles.right}>
