@@ -32,8 +32,8 @@ function Home() {
                         </div>
                         <div className={styles.leftText}>
                             <p>I've been recently learning how to 3D model using Spline, and I would love to show my mini project to you!</p>
-                            <p>It will take a few seconds to render the page.</p>
-                            <p>Works best on any other browser except chrome</p>
+                            <p>It will take a few seconds to render the page (Works best on any browser other than chrome).</p>
+                            <p></p>
                     </div>
                     <h2>Check out my other links:</h2>
                     <div className={styles.linksList}>
