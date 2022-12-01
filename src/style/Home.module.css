@@ -11,13 +11,12 @@
     }
 
     .left{
-        padding: 10px;
+        padding: 30px 10px;
         font-size: 21px;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 50vh;
-        width: 80%;
+        height: 40vh;
     }
 
     .leftTop img{
@@ -38,12 +37,11 @@
     }
 
     .right{
-        padding: 10px;
-        background-color: lightblue;
+        background-color: #8FCCD0;
+        height: 65vh;
     }
 
     .myRoom{
-        padding: 5%;
         width: 70%;
     }
 
@@ -59,9 +57,24 @@
     .link{
         width: 5vw;
         height: 5vw;
-
     }
     
+}
+
+@media (max-width:1025px){
+    .right{
+        background-color: #8FCCD0;
+        height: 85vh;
+    }
+}
+
+@media (max-width:500px){
+    .left{
+        width: 100%;
+    }
+    .right{
+        height: 55vh;
+    }
 }
 
 @media (min-width:1025px){
@@ -82,7 +95,7 @@
     }
 
     .left p{
-        font-size: 1vw;;
+        font-size: 1.3vw;;
         margin: 0px;
     }
 
@@ -177,6 +190,7 @@ body{
     animation: 1.8s ease-in-out 0s 1 render;
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .main{
