@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
 .main{
     margin: 0;
     height: 100vh;
@@ -41,7 +43,9 @@
 
 .cardText p{
     margin: 0 5% 2% 5%;
-    font-family: 'Gaegu', cursive;
+    font-size: 21px;
+    font-family: 'Nerko One', cursive;
+    opacity: 70%;
 }
 
 .cardText a {
