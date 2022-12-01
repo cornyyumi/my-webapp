@@ -20,12 +20,17 @@ function Home() {
                     </p>
                     <h2>Check out my other links!</h2>
                     <div className={styles.linksList}>
-                        <div className={styles.link}>
-                            <img src={github}/>
-                        </div>
-                        <div className={styles.link}>
-                            <img src={linkedin}/>
-                        </div>
+                        <a href='https://github.com/cornyyumi' target='_blank'>
+                            <div className={styles.link}>
+                                <img src={github}/>
+                            </div>
+                        </a>
+                        <a href='https://www.linkedin.com/in/grace-kim-62140821b/' target='_blank'>
+                            <div className={styles.link}>
+                                <img src={linkedin}/>
+                            </div>
+                        </a>
+
                     </div>
                 </div>
             </div>
