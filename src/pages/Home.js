@@ -1,13 +1,21 @@
+import React, { useEffect } from 'react';
+import Favicon from "react-favicon";
+
 import styles from '../style/Home.module.css';
 import myRoom from '../images/myRoom.png';
 import profile from '../images/profile.png';
 import circle1 from '../images/circle1.png';
 import github from '../images/github.png';
 import linkedin from '../images/linkedin.png';
+import faviconCorn from '../images/faviconCorn.png';
 
 function Home() {
+    useEffect(() => {
+        document.title = 'Grace Kim';
+      }, []);
     return (
         <div className={styles.main}>
+            <Favicon url={faviconCorn}></Favicon>
             <div className={styles.left}>
                 <div className={styles.leftTop}>
                     <h1>Hi, I'm Grace Kim</h1>
