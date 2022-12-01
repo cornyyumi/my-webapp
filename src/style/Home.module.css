@@ -68,23 +68,25 @@
 body{
     background-color: #A4DBDE;
     animation: 1.8s ease-in-out 0s 1 render;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .main{
     padding-top: 4%;
     display: flex;
     justify-content: center;
-    background-color: #A4DBDE;
     font-family: 'Nerko One', cursive;
 }
 
 .main h1{
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 400;
 }
 
 .main h2{
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 400;
 }
 
@@ -95,8 +97,8 @@ body{
 }
 
 .left p{
-    font-size: 26px;
-    margin: 5px;
+    font-size: 20px;
+    margin: 2px;
 
 }
 
@@ -133,8 +135,8 @@ body{
 
 .circle1{
     position: absolute;
-    width: 700px;
-    height: 700px;
+    width: 650px;
+    height: 650px;
 }
 
 .circle1 img{
@@ -144,7 +146,7 @@ body{
 
 .myRoom img{
     animation: 2s ease-in-out 0s 1 fadeInRoom;
-    width: 750px;
+    width: 700px;
     filter: drop-shadow(10px 6px 6px rgba(0, 0, 0, 0.25));
 }
 
