@@ -1,15 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 
 
+@keyframes render {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes renderLinks {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes textTransition {
+    0% {
+      transform: translatex(-100%);
+    }
+    100% {
+      transform: translatex(0);
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+      transform: scale(0%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+
+@keyframes fadeInRoom {
+    0% {
+        opacity: 0%;
+    }
+    65%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeInRoomButton {
+    0% {
+        opacity: 0%;
+        transform: translatey(-100%);
+    }
+    55%{
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+        transform: translatey(0);
+    }
+}
+
+
+body{
+    background-color: #A4DBDE;
+    animation: 1.8s ease-in-out 0s 1 render;
+}
 
 .main{
+    padding-top: 4%;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #A4DBDE;
-    height: 100vh;
     font-family: 'Nerko One', cursive;
-
 }
 
 .main h1{
@@ -30,6 +96,19 @@
 
 .left p{
     font-size: 26px;
+    margin: 5px;
+
+}
+
+.leftText:nth-child(1){
+    animation: 0.8s ease-in-out 0s 1 textTransition;
+}
+.leftText:nth-child(2){
+    animation: 1s ease-in-out 0s 1 textTransition;
+}
+
+.leftText:nth-child(3){
+    animation: 1.2s ease-in-out 0s 1 textTransition;
 }
 
 .leftTop{
@@ -44,7 +123,7 @@
 .leftBot{
 }
 
-.right{
+.right{    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,15 +138,18 @@
 }
 
 .circle1 img{
+    animation: 1.5s ease-in-out 0s 1 fadeIn;
     width: 100%;
 }
 
 .myRoom img{
-    width: 950px;
+    animation: 2s ease-in-out 0s 1 fadeInRoom;
+    width: 750px;
     filter: drop-shadow(10px 6px 6px rgba(0, 0, 0, 0.25));
 }
 
 .myRoomButton{
+    animation: 3.2s ease-in-out 0s 1 fadeInRoomButton;
     text-align: center;
     color: white;
     font-size: 35px;
@@ -102,6 +184,8 @@
     justify-content: center;
     align-items: center;
 
+    animation: 0.8s ease-in-out 0s 1 renderLinks;
+
     color: #A4DBDE;
     background-color: #FFFDF5;
     width: 80px;
@@ -121,5 +205,5 @@
 }
 
 .link:hover{
-    background-color: bisque;
+    background-color: #FFF2C2;
 }

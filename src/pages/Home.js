@@ -14,11 +14,19 @@ function Home() {
                     <img src={profile}/>
                 </div>
                 <div className={styles.leftBot}>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nunc a felis consequat, molestie enim et, viverra libero.
-                        Integer tempus diam at justo tempus, at iaculis mi fringilla.
-                    </p>
-                    <h2>Check out my other links!</h2>
+                        <div className={styles.leftText}>
+                            <p>
+                                I am currently in my last year of my bachelor’s degree in Computer Science at the University of Auckland.
+                            </p> <br/>
+                        </div>
+                        <div className={styles.leftText}>
+                            <p>I love to draw, code and create new things in my spare time.</p> <br/>
+                        </div>
+                        <div className={styles.leftText}>
+                            <p>I've been recently learning how to 3D model using Spline, and I would love you to show my mini project to you!</p>
+                            <p>It will take a few seconds to render the page.</p>
+                    </div>
+                    <h2>Check out my other links:</h2>
                     <div className={styles.linksList}>
                         <a href='https://github.com/cornyyumi' target='_blank'>
                             <div className={styles.link}>
@@ -47,8 +55,6 @@ function Home() {
                         <p>Click here to interact with my room!</p>
                     </a>
                 </div>
-
-
             </div>
         </div>
     );
