@@ -1,39 +1,50 @@
+import React, { useEffect } from 'react';
+import Favicon from "react-favicon";
+
 import styles from '../style/Polariod.module.css';
-import corn from '../images/corn.png';
-import cornCat from '../images/cornCat.png';
-import corny from '../images/corny.png';
+import polariod1 from '../images/polariod1.PNG';
+import polariod2 from '../images/polariod2.JPG';
+import polariod3 from '../images/polariod3.JPG';
+import faviconCamera from '../images/faviconCamera.png';
 
 function Polariod(){
+    useEffect(() => {
+        document.title = 'Memories';
+      }, []);
     return (
         <div className={styles.main}>
+            <Favicon url={faviconCamera}></Favicon>
             <div className={styles.cardGroup}>
 
                 <div className={styles.card}>
                     <div className={styles.cardImage}>
-                        <a href="https://www.instagram.com/hybreasalis/" target="_blank">
-                            <img src={corny} onc/>
-                        </a>
+                        <img src={polariod3} onc/>
                     </div>
                     <div className={styles.cardText}>
-                        <p>Thank you <a href="https://www.instagram.com/hybreasalis/" target="_blank">@hybreasalis</a> for the corny profile picture</p>
+                        <p>My family ❤️</p>
                     </div>
                 </div>
 
                 <div className={styles.card}>
                     <div className={styles.cardImage}>
-                        <img src={corn}/>
+                        <img src={polariod1}/>
                     </div>
                     <div className={styles.cardText}>
-                        <p>Self-made Corn</p>
+                        <div className={styles.description}>
+                            <p>My recent birthday</p>
+                        </div>
+                        <div className={styles.date}>
+                            <p>23/11/2022</p>
+                        </div>
                     </div>
                 </div>
 
                 <div className={styles.card}>
                     <div className={styles.cardImage}>
-                            <img src={cornCat}/>
+                            <img src={polariod2}/>
                     </div>
                     <div className={styles.cardText}>
-                            <p>Corny cat</p>
+                            <p>Family fishing trip @Tāwharanui</p>
                     </div>
                  </div>
             </div>

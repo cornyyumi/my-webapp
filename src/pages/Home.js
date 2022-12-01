@@ -1,13 +1,21 @@
+import React, { useEffect } from 'react';
+import Favicon from "react-favicon";
+
 import styles from '../style/Home.module.css';
 import myRoom from '../images/myRoom.png';
 import profile from '../images/profile.png';
 import circle1 from '../images/circle1.png';
 import github from '../images/github.png';
 import linkedin from '../images/linkedin.png';
+import faviconCorn from '../images/faviconCorn.png';
 
 function Home() {
+    useEffect(() => {
+        document.title = 'Grace Kim';
+      }, []);
     return (
         <div className={styles.main}>
+            <Favicon url={faviconCorn}></Favicon>
             <div className={styles.left}>
                 <div className={styles.leftTop}>
                     <h1>Hi, I'm Grace Kim</h1>
@@ -23,8 +31,9 @@ function Home() {
                             <p>I love to draw, code and create new things in my spare time.</p> <br/>
                         </div>
                         <div className={styles.leftText}>
-                            <p>I've been recently learning how to 3D model using Spline, and I would love you to show my mini project to you!</p>
+                            <p>I've been recently learning how to 3D model using Spline, and I would love to show my mini project to you!</p>
                             <p>It will take a few seconds to render the page.</p>
+                            <p>Works best on any other browser except chrome</p>
                     </div>
                     <h2>Check out my other links:</h2>
                     <div className={styles.linksList}>

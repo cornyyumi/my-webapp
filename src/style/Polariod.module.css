@@ -39,11 +39,19 @@
 
 .cardText{
     width: 100%;
+    display: flex;
 }
 
+.description{
+    float: left;
+    width: 70%;
+}
+.date{
+    float: right;
+}
 .cardText p{
     margin: 0 5% 2% 5%;
-    font-size: 21px;
+    font-size: 18px;
     font-family: 'Nerko One', cursive;
     opacity: 70%;
 }
