@@ -74,32 +74,33 @@ body{
 }
 
 .main{
-    padding-top: 4%;
+    padding-top: 2%;
     display: flex;
     justify-content: center;
+
     font-family: 'Nerko One', cursive;
 }
 
 .main h1{
-    font-size: 45px;
+    font-size: 3vw;
     font-weight: 400;
 }
 
 .main h2{
-    font-size: 25px;
+    font-size: 2vw;
     font-weight: 400;
 }
 
 .left{
     height: 800px;
-    width: 800px;
+    width: 40%;
     color: white;
+    margin-right: 4%;
 }
 
 .left p{
-    font-size: 20px;
-    margin: 2px;
-
+    font-size: 1vw;;
+    margin: 0px;
 }
 
 .leftText:nth-child(1){
@@ -119,24 +120,22 @@ body{
 }
 
 .leftTop img{
-    width: 300px;
+    width: 35%;
 }
 
-.leftBot{
-}
+
 
 .right{    
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 900px;
-    width: 900px;
+    height: 100vh;
+    width: 40%;
 }
 
 .circle1{
     position: absolute;
-    width: 650px;
-    height: 650px;
+    width: 40vw;
 }
 
 .circle1 img{
@@ -146,15 +145,17 @@ body{
 
 .myRoom img{
     animation: 2s ease-in-out 0s 1 fadeInRoom;
-    width: 700px;
+    width: 100%;
     filter: drop-shadow(10px 6px 6px rgba(0, 0, 0, 0.25));
 }
 
 .myRoomButton{
     animation: 3.2s ease-in-out 0s 1 fadeInRoomButton;
+    width: 30%;
+
     text-align: center;
     color: white;
-    font-size: 35px;
+    font-size: 1.5vw;
     position: absolute;
     padding: 10px 15px;
     background: rgba(0, 0, 0, 0.36);
@@ -166,6 +167,8 @@ body{
 .myRoomButton p{
     margin: 0;
 }
+
+
 
 .right a{
     text-decoration: none;
@@ -188,11 +191,11 @@ body{
 
     animation: 0.8s ease-in-out 0s 1 renderLinks;
 
-    color: #A4DBDE;
     background-color: #FFFDF5;
-    width: 80px;
-    height: 80px;
-    margin: 10px;
+    width: 3.5vw;
+    height: 3.5vw;
+
+    margin: 0px 10px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
 }
