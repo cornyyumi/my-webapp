@@ -23,7 +23,7 @@ function Home() {
                             <p>I love to draw, code and create new things in my spare time.</p> <br/>
                         </div>
                         <div className={styles.leftText}>
-                            <p>I've been recently learning how to 3D model using Spline, and I would love you to show my mini project to you!</p>
+                            <p>I've been recently learning how to 3D model using Spline, and I would love to show my mini project to you!</p>
                             <p>It will take a few seconds to render the page.</p>
                     </div>
                     <h2>Check out my other links:</h2>
