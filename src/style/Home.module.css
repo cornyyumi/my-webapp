@@ -1,6 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 
 
+@media (max-width:1025px){
+    
+    body{
+        overflow: visible;
+    }
+    .main {
+        display: block;
+    }
+
+    .left{
+        padding: 10px;
+        font-size: 21px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        width: 80%;
+    }
+
+    .leftTop img{
+        width: 45%;
+    }
+
+    .leftTop{
+        width: 80%
+    }
+
+    .leftBot{
+        width: 100%;
+    }
+
+    .left p{
+        font-size: 2vw;;
+        margin: 0px;
+    }
+
+    .right{
+        padding: 10px;
+        background-color: lightblue;
+    }
+
+    .myRoom{
+        padding: 5%;
+        width: 70%;
+    }
+
+    .myRoom img{
+        width: 65vw;
+    }
+
+    .circle1{
+        width: 55vw;
+    }
+
+    
+    .link{
+        width: 5vw;
+        height: 5vw;
+
+    }
+    
+}
+
+@media (min-width:1025px){
+    body{
+        overflow: hidden;
+    }
+    .main {
+        display: flex;
+    }
+
+    .left{
+        height: 800px;
+        width: 40%;
+    }
+
+    .leftTop img{
+        width: 35%;
+    }
+
+    .left p{
+        font-size: 1vw;;
+        margin: 0px;
+    }
+
+    .right{
+        height: 100vh;
+        width: 40%;
+    }
+
+    .link{
+        width: 3.5vw;
+        height: 3.5vw;
+    
+        margin: 0px 10px;
+    }
+
+    .myRoom img{
+        width: 100%;
+    }
+
+    .circle1{
+        width: 40vw;
+    }
+}
+
+
 @keyframes render {
     0% {
         opacity: 0%;
@@ -66,18 +173,15 @@
 
 
 body{
-    background-color: #A4DBDE;
+    background-color: #6CBABF;
     animation: 1.8s ease-in-out 0s 1 render;
     display: flex;
     justify-content: center;
-    overflow: hidden;
 }
 
 .main{
     padding-top: 2%;
-    display: flex;
     justify-content: center;
-
     font-family: 'Nerko One', cursive;
 }
 
@@ -92,16 +196,10 @@ body{
 }
 
 .left{
-    height: 800px;
-    width: 40%;
     color: white;
     margin-right: 4%;
 }
 
-.left p{
-    font-size: 1vw;;
-    margin: 0px;
-}
 
 .leftText:nth-child(1){
     animation: 0.8s ease-in-out 0s 1 textTransition;
@@ -119,9 +217,7 @@ body{
     padding-bottom: 30px;
 }
 
-.leftTop img{
-    width: 35%;
-}
+
 
 
 
@@ -129,13 +225,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 40%;
 }
 
 .circle1{
     position: absolute;
-    width: 40vw;
 }
 
 .circle1 img{
@@ -145,7 +238,6 @@ body{
 
 .myRoom img{
     animation: 2s ease-in-out 0s 1 fadeInRoom;
-    width: 100%;
     filter: drop-shadow(10px 6px 6px rgba(0, 0, 0, 0.25));
 }
 
@@ -192,8 +284,6 @@ body{
     animation: 0.8s ease-in-out 0s 1 renderLinks;
 
     background-color: #FFFDF5;
-    width: 3.5vw;
-    height: 3.5vw;
 
     margin: 0px 10px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
