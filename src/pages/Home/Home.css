@@ -1,126 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 
 
-@media (max-width:1025px){
-    
-    body{
-        overflow: visible;
-    }
-    .main {
-        display: block;
-    }
 
-    .left{
-        padding: 30px 10px;
-        font-size: 21px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 40vh;
-    }
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Nerko One', cursive;
 
-    .leftTop img{
-        width: 45%;
-    }
-
-    .leftTop{
-        width: 80%
-    }
-
-    .leftBot{
-        width: 100%;
-    }
-
-    .left p{
-        font-size: 2vw;;
-        margin: 0px;
-    }
-
-    .right{
-        background-color: #8FCCD0;
-        height: 65vh;
-    }
-
-    .myRoom{
-        width: 70%;
-    }
-
-    .myRoom img{
-        width: 65vw;
-    }
-
-    .circle1{
-        width: 55vw;
-    }
-
-    
-    .link{
-        width: 5vw;
-        height: 5vw;
-    }
-    
+  }
+  
+.main {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    scroll-snap-type: y proximity;
 }
 
-@media (max-width:1025px){
-    .right{
-        background-color: #8FCCD0;
-        height: 85vh;
-    }
+.main section {
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
 }
 
-@media (max-width:500px){
-    .left{
-        width: 100%;
-    }
-    .right{
-        height: 55vh;
-    }
+.top{
+    background-color: #78CED3;
 }
 
-@media (min-width:1025px){
-    body{
-        overflow: hidden;
-    }
-    .main {
-        display: flex;
-    }
+/* Middle of screen */
+.mid{
+    background-color: #44ACB2;
+    display: grid;
+    place-items: center;
+}
 
-    .left{
-        height: 800px;
-        width: 40%;
-    }
+/*Skills*/
 
-    .leftTop img{
-        width: 35%;
-    }
+.skills{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
 
-    .left p{
-        font-size: 1.3vw;;
-        margin: 0px;
-    }
+.skillBox{
+    min-height: 30vh;
+    min-width: 50vw;
+    background-color: #453948;
+    box-shadow: 5px 7px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0 10px 10px 10px;
+}
 
-    .right{
-        height: 100vh;
-        width: 40%;
-    }
+.skillContent{
+    display: none;
+}
 
-    .link{
-        width: 3.5vw;
-        height: 3.5vw;
-    
-        margin: 0px 10px;
-    }
+.activeContent{
+    display: block;
+    padding: 2%;
+}
 
-    .myRoom img{
-        width: 100%;
-    }
+.tab{
+    background-color: #605164;
+    box-shadow: 5px 7px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 9px 9px 0 0;
+    color: white;
+    width: fit-content;
+    padding: 8px 2%;
+}
 
-    .circle1{
-        width: 40vw;
-    }
+.activeTab{
+    background-color: #453948;
+}
+
+.skillsH3{
+    color: #00C2FF;
+}
+
+.skillsP{
+    color: orange;
+}
+
+/* Bottom */
+.bot{
+    background-color: #00333F;
 }
 
 
+
+
+
+
+
+
+
+
+
+/*
 @keyframes render {
     0% {
         opacity: 0%;
@@ -186,7 +161,6 @@
 
 
 body{
-    background-color: #6CBABF;
     animation: 1.8s ease-in-out 0s 1 render;
     display: flex;
     justify-content: center;
@@ -316,3 +290,5 @@ body{
 .link:hover{
     background-color: #FFF2C2;
 }
+
+*/
